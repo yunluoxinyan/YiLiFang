@@ -21,7 +21,6 @@
   	<module>e3_manager_dao</module>
   	<module>e3_manager_interface</module>
   	<module>e3_manager_service</module>
-  	<module>e3_manager_web</module>
   </modules>
   <build>
   	<plugins>
