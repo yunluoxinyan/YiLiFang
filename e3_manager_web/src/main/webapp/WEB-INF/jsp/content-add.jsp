@@ -68,9 +68,10 @@
 				
 				$.post("/content/save",$("#contentAddForm").serialize(), function(data){
 					if(data.status == 200){
-						$.messager.alert('提示','新增内容成功!');
-    					$("#contentList").datagrid("reload");
-    					E3.closeCurrentWindow();
+						$.messager.alert('提示','新增内容成功!',"",function(){
+	    					$("#contentList").datagrid("reload");
+	    					E3.closeCurrentWindow();
+						});
 					}
 				});
 			},
