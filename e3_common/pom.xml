@@ -14,6 +14,12 @@
 			<groupId>joda-time</groupId>
 			<artifactId>joda-time</artifactId>
 		</dependency>
+		<!-- fastDFS图片服务器组件 -->
+		<dependency>
+			<groupId>fastdfs_client</groupId>
+			<artifactId>fastdfs_client</artifactId>
+			<version>1.25</version>
+		</dependency>
 		<!-- Apache工具组件 -->
 		<dependency>
 			<groupId>org.apache.commons</groupId>
