@@ -68,26 +68,37 @@ public class ContentCatServiceImpl implements ContentCatService {
 
 	@Override
 	public E3Result deleteContentCategory(long id) {
-		//deleteById(id);
-		TbContentCategory contentCategory = contentCategoryMapper.selectByPrimaryKey(id);
-		if(contentCategory.getIsParent()){
-			E3Result e3Result = new E3Result(100, null, null);
-			return e3Result;
-		} else {
-			TbContentCategory child = contentCategoryMapper.selectByPrimaryKey(id);
-			TbContentCategoryExample example = new TbContentCategoryExample();
-			Criteria criteria = example.createCriteria();
-			criteria.andParentIdEqualTo(child.getParentId());
-			List<TbContentCategory> list = contentCategoryMapper.selectByExample(example);
-			if(list.size() == 1){
-				TbContentCategory parent = contentCategoryMapper.selectByPrimaryKey(child.getParentId());
-				parent.setIsParent(false);
-				contentCategoryMapper.updateByPrimaryKey(parent);
-			}
-			contentCategoryMapper.deleteByPrimaryKey(id);
-			
-			return E3Result.ok();
+		TbContentCategory child = contentCategoryMapper.selectByPrimaryKey(id);
+		TbContentCategoryExample example = new TbContentCategoryExample();
+		Criteria criteria = example.createCriteria();
+		criteria.andParentIdEqualTo(child.getParentId());
+		List<TbContentCategory> list = contentCategoryMapper.selectByExample(example);
+		if(list.size() == 1) {
+			TbContentCategory parent = contentCategoryMapper.selectByPrimaryKey(child.getParentId());
+			parent.setIsParent(false);
+			contentCategoryMapper.updateByPrimaryKey(parent);
 		}
+		deleteById(id);
+		return E3Result.ok();
+//		TbContentCategory contentCategory = contentCategoryMapper.selectByPrimaryKey(id);
+//		if(contentCategory.getIsParent()){
+//			E3Result e3Result = new E3Result(100, null, null);
+//			return e3Result;
+//		} else {
+//			TbContentCategory child = contentCategoryMapper.selectByPrimaryKey(id);
+//			TbContentCategoryExample example = new TbContentCategoryExample();
+//			Criteria criteria = example.createCriteria();
+//			criteria.andParentIdEqualTo(child.getParentId());
+//			List<TbContentCategory> list = contentCategoryMapper.selectByExample(example);
+//			if(list.size() == 1){
+//				TbContentCategory parent = contentCategoryMapper.selectByPrimaryKey(child.getParentId());
+//				parent.setIsParent(false);
+//				contentCategoryMapper.updateByPrimaryKey(parent);
+//			}
+//			contentCategoryMapper.deleteByPrimaryKey(id);
+//			
+//			return E3Result.ok();
+//		}
 	}
 
 	private void deleteById(long id) {
