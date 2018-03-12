@@ -18,6 +18,7 @@
 		            <th data-options="field:'pic2',width:50,align:'center',formatter:E3.formatUrl">图片2</th>
 		            <th data-options="field:'created',width:130,align:'center',formatter:E3.formatDateTime">创建日期</th>
 		            <th data-options="field:'updated',width:130,align:'center',formatter:E3.formatDateTime">更新日期</th>
+		            <th data-options="field:'content',width:130,align:'center',hidden:true">内容</th>
 		        </tr>
 		    </thead>
 		</table>

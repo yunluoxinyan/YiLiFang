@@ -18,6 +18,11 @@
 		</dependency>
 		<dependency>
 			<groupId>cn.e3mall</groupId>
+			<artifactId>e3_search_interface</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>cn.e3mall</groupId>
 			<artifactId>e3_content_interface</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>

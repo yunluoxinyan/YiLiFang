@@ -28,4 +28,16 @@ public class ContentController {
 	public E3Result saveContent(TbContent content){
 		return contentService.addContent(content);
 	}
+	
+	@RequestMapping(value = "/content/edit",method=RequestMethod.POST)
+	@ResponseBody
+	public E3Result updateContent(TbContent content){
+		return contentService.updateContent(content);
+	}
+	
+	@RequestMapping("/content/delete")
+	@ResponseBody
+	public E3Result deleteContent(String ids){
+		return contentService.deleteContent(ids);
+	}
 }
