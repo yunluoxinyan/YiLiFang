@@ -9,7 +9,11 @@
 	http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.0.xsd">
 
 	
-	<bean id="solrServer" class="org.apache.solr.client.solrj.impl.HttpSolrServer">
+	<!-- <bean id="solrServer" class="org.apache.solr.client.solrj.impl.HttpSolrServer">
 		<constructor-arg index="0" value="http://192.168.25.129:8080/solr/collection1"/>
+	</bean> -->
+	<bean id="solrServer" class="org.apache.solr.client.solrj.impl.CloudSolrServer">
+		<constructor-arg name="zkHost" value="192.168.25.129:2184,192.168.25.129:2182,192.168.25.129:2183"/>
+		<property name="defaultCollection" value="collection2"></property>
 	</bean>
 </beans>

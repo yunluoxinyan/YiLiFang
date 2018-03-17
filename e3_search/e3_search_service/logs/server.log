@@ -1,0 +1,48 @@
+
+
+[INFO ] 2018-03-17 13:59:59,869 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@15075f9: startup date [Sat Mar 17 13:59:59 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-03-17 13:59:59,917 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-activeMQ.xml]
+
+
+[INFO ] 2018-03-17 14:00:00,233 method:org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:341)
+Starting beans in phase 2147483647
+
+
+[INFO ] 2018-03-17 14:00:00,416 method:org.springframework.jms.connection.SingleConnectionFactory.initConnection(SingleConnectionFactory.java:311)
+Established shared JMS Connection: ActiveMQConnection {id=ID:biao-52610-1521266400300-1:1,clientId=null,started=false}
+
+
+[INFO ] 2018-03-17 14:33:36,903 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@73b879: startup date [Sat Mar 17 14:33:36 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-03-17 14:33:36,951 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-activeMQ.xml]
+
+
+[INFO ] 2018-03-17 14:33:37,238 method:org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:341)
+Starting beans in phase 2147483647
+
+
+[INFO ] 2018-03-17 14:33:37,438 method:org.springframework.jms.connection.SingleConnectionFactory.initConnection(SingleConnectionFactory.java:311)
+Established shared JMS Connection: ActiveMQConnection {id=ID:biao-53096-1521268417309-1:1,clientId=null,started=false}
+
+
+[INFO ] 2018-03-17 14:35:07,859 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@267b76: startup date [Sat Mar 17 14:35:07 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-03-17 14:35:07,908 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-activeMQ.xml]
+
+
+[INFO ] 2018-03-17 14:35:08,186 method:org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:341)
+Starting beans in phase 2147483647
+
+
+[INFO ] 2018-03-17 14:35:08,367 method:org.springframework.jms.connection.SingleConnectionFactory.initConnection(SingleConnectionFactory.java:311)
+Established shared JMS Connection: ActiveMQConnection {id=ID:biao-53144-1521268508254-1:1,clientId=null,started=false}

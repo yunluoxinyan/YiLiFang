@@ -21,6 +21,8 @@ public class SearchItemController {
 	
 	@RequestMapping("search")
 	public String searchItem(@RequestParam(defaultValue="1")int page,String keyword,Model model) throws Exception{
+//		int i = 1/0;
+		
 		keyword = new String(keyword.getBytes("iso8859-1"), "utf-8");
 		SearchResult result = searchItemService.searchItem(page, keyword, rows);
 		model.addAttribute("query", keyword);
