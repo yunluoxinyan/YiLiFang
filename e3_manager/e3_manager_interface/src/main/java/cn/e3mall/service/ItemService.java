@@ -4,10 +4,13 @@ package cn.e3mall.service;
 import cn.e3mall.common.pojo.DataGridResult;
 import cn.e3mall.common.pojo.E3Result;
 import cn.e3mall.pojo.TbItem;
+import cn.e3mall.pojo.TbItemDesc;
 
 public interface ItemService {
 	
 	TbItem queryByItemId(long itemId);
+	
+	TbItemDesc queryByItemDescId(long itemId);
 	
 	DataGridResult getItemList(int page,int rows);
 
