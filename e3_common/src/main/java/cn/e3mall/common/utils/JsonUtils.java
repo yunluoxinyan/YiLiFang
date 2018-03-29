@@ -1,4 +1,4 @@
-package cn.e3mall.common.utils;
+﻿package cn.e3mall.common.utils;
 
 import java.util.List;
 
@@ -14,6 +14,7 @@ public class JsonUtils {
     private static final ObjectMapper MAPPER = new ObjectMapper();
 	int i = 1;
 	int m = 1;
+	int j = 1;
 
     /**
      * 将对象转换成json字符串。
