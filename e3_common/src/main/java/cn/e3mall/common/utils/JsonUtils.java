@@ -15,6 +15,7 @@ public class JsonUtils {
 	int i = 1;
 	int m = 1;
 	int j = 1;
+	int n = 1;
 
     /**
      * 将对象转换成json字符串。
